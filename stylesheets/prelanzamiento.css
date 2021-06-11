@@ -1,0 +1,201 @@
+body {
+	background-color: #d8da3d;
+	font: 1em  Verdana, Arial, Helvetica, san-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#encabezado {
+	background-color: #D9FFB3;
+	border: 1px solid yellow;
+	padding: 1ex 1.5ex 1.5ex 2em;
+	margin: 0.5em;
+}
+
+#encabezado span {
+	font: .65em Arial;
+	color: brown;
+	
+}
+
+/****** Menu ******/
+#menu {
+	border: 0px solid blue;
+	list-style-type: none;
+	margin: 0.5em;
+	border: 0;
+}
+
+#menu li {
+	display: inline;
+}
+
+/****** contenido ******/
+
+#contenido {	
+	border-top: 3px solid black;	
+	padding: 0 20em 1.5ex 1em;	
+	float: left;
+	margin:0 1.1em 0 1.1em;	
+}
+
+#contenido p {
+	border: 0px solid blue;
+	margin: .2ex 0 .5em 0;
+}
+
+/****** barra_lateral ******/
+#barra_lateral {	
+	border-left: 3px solid black;
+	width: 17em;
+	margin: 0 0 1em -18em; /* deberia ser -18 pero no se ve*/	
+	float: left;	
+	padding-left: .5ex;
+	padding-bottom: 0;
+}
+
+#barra_lateral form .texto{
+	font-size: .8em;
+	width: 80%;
+}
+
+#barra_lateral form .boton{
+	font-size: .9em;	
+}
+
+/****** pie de pagina ******/
+
+#pie_pagina {
+	border-top: 2px solid black;
+	display: block;
+	clear: both;
+	margin:0 1.1em 0 1.1em;
+	padding: 0;
+}
+
+#pie_pagina ul {
+	padding: .2ex 0 0 .2ex;
+	margin: 0;
+}
+
+#pie_pagina li {
+	display: inline;
+	font-size: .6em;
+}
+
+
+/****** formato formulario de alta ******/
+#form_alta ul{
+	/*border: 1px solid brown;*/
+	list-style-type: none;
+	padding: 0;	
+}
+
+#form_alta li {
+	padding-bottom: .5ex;
+	margin-right: .5ex;
+}
+#form_alta .text {
+	width: 15em;
+}
+
+#form_alta li label {
+	/*border: 1px solid red;*/
+	width: 11em;
+	display: block;
+	float: left;
+	padding-right: .25ex;
+	text-align: right;
+}
+
+#form_alta #boton_alta  {
+	/*border: 1px solid red;*/
+	text-align: left;
+	padding: 1em 1em 1em 12em;
+}
+
+#form_alta #btnalta  {
+	border: 1px solid red;
+	width: 10em;
+	font-size: 1em;
+}
+
+ul img {
+	/*border: 1px solid red;*/
+	/*170*100*/
+	width: 170px;
+	height: 100px;
+	margin-right: 1em;
+	margin-bottom: 1.5em;
+}
+
+fieldset ul {
+	list-style-type: none;
+}
+
+fieldset {
+	/*width: 47em;*/
+	width: 50%;
+	border:1px solid gray;
+	text-align: right;
+	padding: 1em;
+	font:80%/1 sans-serif;
+  }
+  
+fieldset legend {
+  padding: 0.2em 0.5em;
+  border:1px solid;
+  /*color:green;*/
+  font-size:90%;
+  text-align:right;
+}
+
+#form_login label {
+	/*width: 3em;*/
+	display: block;
+	text-align: right;
+}
+
+.error {
+	color: red;
+}
+
+.exito {
+	color: green;
+}
+
+
+form {
+	padding: 1ex 20em 1.5ex 1.5ex;
+	float: left;
+	width: 66.7%;
+}
+
+form label {
+	display: block;
+	font-weight:bold;
+}
+
+form .texto_input {
+	width: 12em; 
+	/*border: 1px solid red;*/
+	display: inline-block;
+	text-align: right;
+	padding: 0 1em 0 0;
+}
+
+form .requerido {
+	color: red;
+}
+
+form input {
+	width: 20em; 
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+form input[type=submit] {
+	width: auto; 
+	/*border: 1px solid red;*/
+	display: inline-block;	
+}

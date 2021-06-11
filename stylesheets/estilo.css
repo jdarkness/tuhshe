@@ -1,0 +1,389 @@
+body {
+	background-color: #3AC03F; /*#d8da3d;*/
+	font: 1em  Verdana, Arial, Helvetica, san-serif;
+}
+
+#encabezado {
+	background-color: #D9FFB3;
+	border: 1px solid yellow;
+	padding: 1ex 1.5ex 1.5ex 2em;
+	margin-bottom: 0.5em;
+}
+
+
+#cuadro_pagina {	
+	/*border: 1px solid grey;	*/
+}
+
+
+/****** contenido ******/
+
+#contenido {	
+	border: 1px solid blue;
+	padding: 0 20em 1.5ex 1em;	
+	float: left;
+}
+
+/****** barra_lateral ******/
+#barra_lateral {	
+	border: 1px solid purple;
+	width: 17em;
+	margin: 0 0 1em -18em; /* deberia ser -18 pero no se ve*/	
+	float: left;	
+}
+
+
+#cabeza {
+	/*border: 1px solid yellow;*/
+	padding: 1ex 1.5ex 1.5ex 1.5ex;
+	margin-bottom: 2em;
+}
+
+#cabeza #titulo {
+	color: red;
+	display: block;
+	float:left;	
+}
+
+#cabeza #fecha {
+	border: 1px solid blue;
+	color: cyan;
+	display: block;
+	text-align: right;
+	width: 12em;
+	float: right;
+	background-color: #7dc929;
+}
+
+#cabeza #fecha div {	
+	color: blue;	
+	text-align: left;
+	display: block;
+}
+
+#cabeza #fecha span {	
+	display: block;
+	float: left;
+	text-align: right;
+	width: 4em;
+	padding-right: 0.25ex;
+}
+
+#cuadro_actividades {
+	/*border: 1px solid purple;*/
+	padding: 1ex 20em 1.5ex 1.5ex;
+	float: left;
+	width: 66.7%;
+}
+
+#cuadro_actividades #nueva_actividad {
+	width: 40em;	
+}
+
+#cuadro_actividades h2 {
+	/*border: 1px solid purple;*/
+	margin-left: 1em;
+	/*width: 10em;	*/
+}
+
+#cuadro_actividades ul {
+	/*border: 1px solid purple;*/
+	list-style-type: none;
+	padding: 0.25ex 0 .025ex 0;
+	margin-left: 1em;		
+	/*width: 20em;*/
+}
+
+#cuadro_actividades ul li {	
+	/*border: 1px solid brown;*/
+	margin: 1.25ex;
+}
+
+#cuadro_actividades ul li .task{
+	/*border: 1px solid yellow;*/
+	display: block;
+}
+
+.edicion{
+	/*border: 1px solid brown;	*/
+	text-align: right;
+	margin-left: 1.5em;
+	/*display: block;*/
+	/*margin-bottom: -1.66em; 
+	padding: 0 2em 0 0;*/
+}
+
+#cuadro_actividades ul li .hecho{
+	text-decoration: line-through;
+}
+
+.ya_esta{
+	text-decoration: line-through;	
+}
+
+#calendario {
+	border: 1px solid gray;
+}
+
+#notas {
+	border: 1px solid blue;
+	background-color: #af9df9;
+	float: left;
+	width: 17em;
+	margin: 4em 0 4em -18em;	
+	text-align: center;
+	padding: 1.25ex 0 1.25ex 0; 
+}
+
+li.flecha {
+	border: 1px solid red;
+	background-image: url('agt_back-32.png');
+	background-repeat: no-repeat;
+	/*background-position: right center;*/
+	background-position: 610px center;
+	background-color: #af9df9;
+}
+
+
+.today {
+	/*margin-top: -1.66em; */
+	/*padding: 0 2em 0 0;*/
+	/*color: #FFF;*/
+	/*font-weight: bold;*/
+	/*text-align: right;*/
+	/*line-height: 1;*/
+}
+
+.texto {
+	border: 1px solid red;
+}
+
+/*** estilo para el menu de actividades ***/
+
+#menu {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;	*/
+}
+
+#menu ul {
+	list-style:none;
+	margin-right: 1em;
+	margin-top: 0em;
+}
+
+#menu ul li {
+	width: 7em;
+	float: left;
+	text-align: center;
+	/*border-right: 1px solid gray;
+	border-bottom: 1px solid gray;*/
+	border: 1px solid gray;
+}
+
+#menu ul li a{
+	text-decoration: none;		
+	padding-left: .5em;	
+	padding-right: .5em;
+	display: block;
+}
+
+
+#menu ul li a:hover {	
+	background:#D7E5EF;
+	color:#000
+}
+
+/******************************************/
+
+
+/*** estilo para el calendario ***/
+#calendario ul{
+	/*border: 1px solid blue;*/
+	text-align: center;
+	display: block;
+	margin: 1em;
+}
+
+#calendario ul li{
+	list-style-type: none;
+}
+
+#calendario table {
+	/*border: 1px solid blue;*/
+	border-collapse:collapse;
+	margin-top: 1em;
+	display: inline;
+	margin: 1em auto;
+}
+
+#calendario table caption{	
+	font-size:.8em;
+}
+
+#calendario td, #calendario table th {
+	/*font-size:1em;*/
+	font-size:.5em;
+	border:1px solid #98bf21;
+	padding:3px 7px 2px 7px;
+}
+
+#calendario table td {
+	/*font-size:1.1em;*/
+	font-size:.55em;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	/*padding: 0;	*/
+	background-color:#A7C942;
+	color:#ffffff;	
+}
+
+#calendario table a{
+	display: block;
+	text-decoration: none;
+}
+
+#calendario table a:hover {
+	background: gray;
+}
+
+#calendario .fila_mes {
+	/*border: 1px solid red;*/
+	text-align: center;
+	margin-top: 1em;	
+}
+
+#calendario table .hoy{
+	background: #C93C54;
+}
+
+#calendario table .fecha_trabajo{
+	background: #3C54C9;
+}
+
+/*********************************/
+
+/****** pie de pagina ******/
+
+#pie_pagina {
+	border: 1px solid red;
+	display: block;
+	clear: both;
+}
+
+#pie_pagina li {
+	display: inline;
+}
+
+/****** formato formulario de alta ******/
+#form_alta ul{
+	/*border: 1px solid brown;*/
+	list-style-type: none;
+	padding: 0;	
+}
+
+#form_alta li {
+	padding-bottom: .5ex;
+	margin-right: .5ex;
+}
+#form_alta .text {
+	width: 15em;
+}
+
+#form_alta li label {
+	/*border: 1px solid red;*/
+	width: 11em;
+	display: block;
+	float: left;
+	padding-right: .25ex;
+	text-align: right;
+}
+
+#form_alta #boton_alta  {
+	/*border: 1px solid red;*/
+	text-align: left;
+	padding: 1em 1em 1em 12em;
+}
+
+#form_alta #btnalta  {
+	border: 1px solid red;
+	width: 10em;
+	font-size: 1em;
+}
+
+.advertencia {
+	background: #fff6bf url('../images/bullet_error.png') center no-repeat;
+	background-position: 15px 15px;
+	text-align: left;
+	padding: 5px 20px 5px 45px;
+	/*border-top: 2px solid #ffd324;
+	border-bottom: 2px solid #ffd324;*/
+	display:block;
+}
+.advertencia_icono {
+	background: #d8da3d url('../images/bullet_error.png') center no-repeat;
+	background-position: 2px 50%;	
+	display:inline;
+}
+
+#cuadro_perfil {
+	padding: 1ex 20em 1.5ex 1.5ex;
+	float: left;
+	/*width: 66.7%;*/
+}
+
+
+/************************  Estilo de los formulario  ***************************/
+
+fieldset {
+	/*width: 47em;*/
+	/*width: 80%;*/
+	border:1px solid gray;
+	text-align: right;
+	padding: 1em;
+	font:80%/1 sans-serif;
+  }
+  
+fieldset legend {
+  padding: 0.2em 0.5em;
+  border:1px solid gray;
+  /*color:green;*/
+  font-size:90%;
+  text-align:right;
+}
+
+form {
+	padding: 1ex 20em 1.5ex 1.5ex;
+	float: left;
+	/*width: 66.7%;*/
+}
+
+form label {
+	display: block;
+	font-weight:bold;
+}
+
+form .texto_input {
+	width: 12em; 
+	/*border: 1px solid red;*/
+	display: inline-block;
+	text-align: right;
+	padding: 0 1em 0 0;
+}
+
+form .requerido {
+	color: red;
+}
+
+form input {
+	width: 20em; 
+	/*border: 1px solid red;*/
+	display: inline-block;
+}
+
+form input[type=submit] {
+	width: auto; 
+	/*border: 1px solid red;*/
+	display: inline-block;	
+}

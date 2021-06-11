@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 5.1.63, for pc-linux-gnu (i686)
+--
+-- Host: localhost    Database: Actividad
+-- ------------------------------------------------------
+
+--
+-- Table structure for table `actividad`
+--
+
+DROP TABLE IF EXISTS `actividad`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `actividad` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(10) unsigned NOT NULL,
+  `fecha` date NOT NULL,
+  `actividad` varchar(255) NOT NULL,
+  `completada` int(11) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `notas`
+--
+
+DROP TABLE IF EXISTS `notas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `notas` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_actividad` int(10) unsigned NOT NULL,
+  `nota` varchar(762) DEFAULT NULL,
+  `tipo_nota` varchar(2) NOT NULL DEFAULT 'NA',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuario` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) NOT NULL,
+  `contrasenia` varchar(60) NOT NULL,
+  `correo` varchar(45) NOT NULL,
+  `salt` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
