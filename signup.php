@@ -75,9 +75,8 @@
 		*/
 	}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<?php require 'include/doctype.php'; ?>
+<html class="no-js" lang="">
 <head>
 	<title>Tuhshe</title>
 	<link rel="stylesheet" href="stylesheets/prelanzamiento.css" type="text/css" />	

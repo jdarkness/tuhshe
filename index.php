@@ -1,6 +1,4 @@
-<?php
-	require("include/funciones.php");	
-?>
+<?php require("include/funciones.php");	?>
 <?php require 'include/doctype.php'; ?>
 <html class="no-js" lang="">
 <?php require 'include/head.php'; ?>

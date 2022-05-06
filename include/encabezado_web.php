@@ -1,0 +1,1 @@
+<h1 id="encabezado">Tuhshe <span>[ Tomando al mundo con tranquilidad ]</span></h1>

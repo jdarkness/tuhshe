@@ -1,16 +1,10 @@
-<?php
-require("include/funciones.php");
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-	<title>Prelanzamiento</title>
-	<link rel="stylesheet" href="stylesheets/prelanzamiento.css" type="text/css" />
-</head>
+<?php require 'include/funciones.php';?>
+<?php require 'include/doctype.php'; ?>
+<html class="no-js" lang="">
+<?php require 'include/head.php'; ?>
 <body>
 	<div id="marco">
-		<h1 id="encabezado">Tuhshe <span>[ Tomando al mundo con tranquilidad ]</span></h1>
+		<?php require 'include/encabezado_web.php'; ?>
 		<ul id="menu">
 			<li><a href="index.php">Inicio<a></li>
 			<li>| Screenshots</a></li>
