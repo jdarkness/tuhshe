@@ -1,11 +1,10 @@
-<?php require 'include/funciones.php';	?>
-<?php require 'include/doctype.php'; ?>
+<?php require 'web/include/doctype_web.php'; ?>
 <html class="no-js" lang="">
-<?php require 'include/head.php'; ?>
+<?php require 'web/include/head_web.php'; ?>
 <body>
 	<div id="marco">
-		<?php require 'include/encabezado_web.php'; ?>
-		<?php require 'include/menu_web.php'; ?>
+		<?php require 'web/include/encabezado_web.php'; ?>
+		<?php require 'web/include/menu_web.php'; ?>
 		<div id="contenido">
 			<p>
 				Pronto sera el lanzamiento de Tuhshe, un sistema para organizar tus actividades diarias concentrandote solamente en aquellas que son mas importantes.
@@ -33,8 +32,8 @@
 			<h3>Alpha</h3>
 			<p>Es sistema esta actualmente en desarrollo y esta en la etapa de pruebas antes de poder sacar una beta publica</p>
 		</div>		
-		<?php require 'include/pie_pagina.php'; ?>
+		<?php require 'web/include/pie_pagina_web.php'; ?>
 	</div>
-	<?php require 'include/analisis.php'; ?>
+	<?php require 'web/include/analisis_web.php'; ?>
 </body>
 </html>
