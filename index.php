@@ -1,16 +1,11 @@
-<?php require("include/funciones.php");	?>
+<?php require 'include/funciones.php';	?>
 <?php require 'include/doctype.php'; ?>
 <html class="no-js" lang="">
 <?php require 'include/head.php'; ?>
 <body>
 	<div id="marco">
-		<h1 id="encabezado">Tuhshe <span>[ Tomando al mundo con tranquilidad ]</span></h1>
-		<ul id="menu">
-			<li>Inicio</li>
-			<li>| <a href="pantallazos.php">Screenshots</a></li>
-			<li>| <a href="login.php">Acceder</a></li>
-			<li>| <a href="signup.php">Crear Cuenta</a></li>
-		</ul>
+		<?php require 'include/encabezado_web.php'; ?>
+		<?php require 'include/menu_web.php'; ?>
 		<div id="contenido">
 			<p>
 				Pronto sera el lanzamiento de Tuhshe, un sistema para organizar tus actividades diarias concentrandote solamente en aquellas que son mas importantes.
@@ -34,15 +29,12 @@
 				</form>
 			</p>
 			<h3>Prelanzamiento</h3>
-			<p>Espera un poco y podras probar Tuhshe y podras dar tu opinion</p>
+			<p>Espera un poco y podras probar Tuhshe y darnos tu opinion</p>
 			<h3>Alpha</h3>
 			<p>Es sistema esta actualmente en desarrollo y esta en la etapa de pruebas antes de poder sacar una beta publica</p>
 		</div>		
-		<div id="pie_pagina">
-			<ul>
-				<li>Tuhshe.com</li>
-			<ul>
-		</div>
+		<?php require 'include/pie_pagina.php'; ?>
 	</div>
+	<?php require 'include/analisis.php'; ?>
 </body>
 </html>

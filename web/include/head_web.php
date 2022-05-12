@@ -11,12 +11,11 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="clipboard.png?id=<?php echo rand(); ?>">
-  <link rel="icon" type="image/ico" href="clipboard.png?id=<?php echo rand(); ?>" />
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/ico" href="clipboard.png?id=<?php echo rand(); ?>" />  
 
-  <link rel="stylesheet" href="css/normalize.css?id=<?php echo rand(); ?>">
-  <link rel="stylesheet" href="css/main.css?id=<?php echo rand(); ?>">
-  <link rel="stylesheet" href="stylesheets/formato.css?id=<?php echo rand(); ?>" />
+  <link rel="stylesheet" href="web/css/normalize_web.css?id=<?php echo rand(); ?>">
+  <link rel="stylesheet" href="web/css/main_web.css?id=<?php echo rand(); ?>">
+  <link rel="stylesheet" href="web/css/formato_web.css?id=<?php echo rand(); ?>" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
