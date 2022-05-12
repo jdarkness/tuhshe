@@ -5,12 +5,7 @@
 <body>
 	<div id="marco">
 		<?php require 'include/encabezado_web.php'; ?>
-		<ul id="menu">
-			<li><a href="index.php">Inicio<a></li>
-			<li>| Screenshots</a></li>
-			<li>| <a href="login.php">Acceder<a></li>
-			<li>| <a href="signup.php">Crear Cuenta</a></li>
-		</ul>
+		<?php require 'include/menu_web.php'; ?>
 		<div id="contenido">			
 			<fieldset>
 				<!--<legend>Actividades</legend>-->
@@ -22,13 +17,9 @@
 					<li><a href="img/calendario.png" target="_black"><img src="img/calendario.png" alt="calendario" /></a><!--Calendario--></li>
 				</ul>
 			</fieldset>
-		</div>
-		
-		<div id="pie_pagina">
-			<ul>
-				<li>Tuhshe.com</li>
-			<ul>
-		</div>
+		</div>		
+		<?php require 'include/pie_pagina.php'; ?>
 	</div>
+	<?php require 'include/analisis.php'; ?>
 </body>
 </html>

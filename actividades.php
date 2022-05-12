@@ -229,7 +229,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<link rel="stylesheet" href="stylesheets/estilo.css" type="text/css" />
+		<link rel="stylesheet" href="stylesheets/estilo.css?id=<?php echo rand(); ?>" type="text/css" />
 		<title>Actividades</title>
 	</head>
 	<body >

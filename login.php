@@ -66,6 +66,7 @@
 		<?php require 'include/encabezado_web.php'; ?>
 		<?php require 'include/menu_web.php'; ?>
 		<div id="contenido">
+			<br>
 			<fieldset>
 				<form id="form_login" action="<?php echo basename(__FILE__); ?>" method="post">
 					<label for="txtlogin_email">Correo electronico: <input type="text" name="txtlogin_email" id="txtlogin_email" /></label>

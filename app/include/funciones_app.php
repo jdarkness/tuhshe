@@ -116,6 +116,11 @@ function conectar_a_bd($basededatos="actividad") {
 	$usuario='usuario';
 	$contrasenia='password';	
 	$host='localhost';
+	
+	$usuario='root';
+	$contrasenia='toor0908';	
+	$host='localhost';	
+	
 	$link = mysqli_connect($host, $usuario, $contrasenia, $basededatos);
 	if (mysqli_connect_errno()) {
 		printf("Connect failed: %s\n", mysqli_connect_error());

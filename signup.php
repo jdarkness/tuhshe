@@ -77,21 +77,12 @@
 ?>
 <?php require 'include/doctype.php'; ?>
 <html class="no-js" lang="">
-<head>
-	<title>Tuhshe</title>
-	<link rel="stylesheet" href="stylesheets/prelanzamiento.css" type="text/css" />	
-</head>
+<?php require 'include/head.php'; ?>
 <body>	
 	<div id="marco">
-		<h1 id="encabezado">Tuhshe, aumentando tu productividad</h1>
-		<div id="menu">
-			<ul>
-				<li><a href="index.php">Inicio</a></li>
-				<li>| <a href="pantallazos.php">Screenshots</a></li>
-				<li>| <a href="login.php">Acceder</a></li>
-				<li>| Crear Cuenta</a></li>
-			</ul>
-		</div>
+		<?php require 'include/encabezado_web.php'; ?>
+		<?php require 'include/menu_web.php'; ?>
+		<div id="contenido">
 		<fieldset>
 			<legend><b>Datos de la Cuenta</b></legend>
 			<form id="form_login" action="<?php echo basename(__FILE__); ?>" method="post">			
@@ -120,6 +111,9 @@
 			</form>
 		</fieldset>
 	</div>
+	<?php require 'include/pie_pagina.php'; ?>
+	</div>
+	<?php require 'include/analisis.php'; ?>
 </body>
 </html>
 <?php
