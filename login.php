@@ -1,11 +1,11 @@
 <?php
+	require 'app/include/funciones_app.php';
 	$error=0;
 	$msgerror="";
 	if (isset($_POST['txtlogin_email'])){
 		$txtlogin_email=($_POST['txtlogin_email']);
-		//echo "segunda ves<br />";
-		$mensaje="";
-		require("include/funciones.php");
+		echo "segunda ves<br />";
+		$mensaje="";		
 		$link=conectar_a_bd();
 		$todo_bien='no';
 		if (!empty($_POST['txtlogin_email'])) {
@@ -21,8 +21,7 @@
 		} else {
 			$mensaje="por favor escriba su contraseña";
 			$todo_bien='no';
-		}
-		//$link=conectar_a_bd('u94051_actividad');		
+		}		
 		$consulta="SELECT nombre, salt, contrasenia, id  FROM usuario WHERE correo='{$usuario}'";
 		$resultado=consulta($consulta, $link);
 		//var_dump($resultado);
@@ -58,13 +57,13 @@
 		mysqli_free_result($result);
 	}
 ?>
-<?php require 'include/doctype.php'; ?>
+<?php require 'app/include/doctype_app.php'; ?>
 <html class="no-js" lang="">
-<?php require 'include/head.php'; ?>
+<?php require 'app/include/head_app.php'; ?>
 <body>
 	<div id="marco">
-		<?php require 'include/encabezado_web.php'; ?>
-		<?php require 'include/menu_web.php'; ?>
+		<?php require 'app/include/encabezado_app.php'; ?>
+		<?php require 'app/include/menu_app.php'; ?>
 		<div id="contenido">
 			<br>
 			<fieldset>
@@ -80,8 +79,8 @@
 				</form>
 			</fieldset>
 		</div>
-		<?php require 'include/pie_pagina.php'; ?>
+		<?php require 'app/include/pie_pagina_app.php'; ?>
 	</div>
-	<?php require 'include/analisis.php'; ?>
+	<?php require 'app/include/analisis_app.php'; ?>
 </body>
 </html>
