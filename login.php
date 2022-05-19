@@ -57,13 +57,13 @@
 		mysqli_free_result($result);
 	}
 ?>
-<?php require 'app/include/doctype_app.php'; ?>
-<html class="no-js" lang="">
-<?php require 'app/include/head_app.php'; ?>
+<?php require 'web/include/doctype_web.php'; ?>
+<?php require 'web/include/html_web.php'; ?>
+<?php require 'web/include/head_web.php'; ?>
 <body>
 	<div id="marco">
-		<?php require 'app/include/encabezado_app.php'; ?>
-		<?php require 'app/include/menu_app.php'; ?>
+		<?php require 'web/include/encabezado_web.php'; ?>
+		<?php require 'web/include/menu_web.php'; ?>
 		<div id="contenido">
 			<br>
 			<fieldset>
@@ -79,8 +79,8 @@
 				</form>
 			</fieldset>
 		</div>
-		<?php require 'app/include/pie_pagina_app.php'; ?>
+		<?php require 'web/include/pie_pagina_web.php'; ?>
 	</div>
-	<?php require 'app/include/analisis_app.php'; ?>
+	<?php require 'web/include/analisis_web.php'; ?>
 </body>
 </html>

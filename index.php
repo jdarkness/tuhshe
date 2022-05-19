@@ -1,5 +1,5 @@
 <?php require 'web/include/doctype_web.php'; ?>
-<html class="no-js" lang="">
+<?php require 'web/include/html_web.php'; ?>
 <?php require 'web/include/head_web.php'; ?>
 <body>
 	<div id="marco">

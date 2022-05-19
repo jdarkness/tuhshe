@@ -1,10 +1,10 @@
 <?php
+	require 'app/include/funciones_app.php';
 	$error=0;
 	$msgerror="";
 	if (isset($_POST['txtSignupEmail'])){
 		//echo "segunda ves<br />";
-		// Inicializamos variables
-		require("include/funciones.php");
+		// Inicializamos variables	
 		$link=conectar_a_bd();
 		
 		$mensaje="";		
@@ -75,13 +75,13 @@
 		*/
 	}
 ?>
-<?php require 'include/doctype.php'; ?>
-<html class="no-js" lang="">
-<?php require 'include/head.php'; ?>
+<?php require 'web/include/doctype_web.php'; ?>
+<?php require 'web/include/html_web.php'; ?>
+<?php require 'web/include/head_web.php'; ?>
 <body>	
 	<div id="marco">
-		<?php require 'include/encabezado_web.php'; ?>
-		<?php require 'include/menu_web.php'; ?>
+		<?php require 'web/include/encabezado_web.php'; ?>
+		<?php require 'web/include/menu_web.php'; ?>
 		<div id="contenido">
 		<fieldset>
 			<legend><b>Datos de la Cuenta</b></legend>
@@ -111,9 +111,9 @@
 			</form>
 		</fieldset>
 	</div>
-	<?php require 'include/pie_pagina.php'; ?>
+	<?php require 'web/include/pie_pagina_web.php'; ?>
 	</div>
-	<?php require 'include/analisis.php'; ?>
+	<?php require 'web/include/analisis_web.php'; ?>
 </body>
 </html>
 <?php
